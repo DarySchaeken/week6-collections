@@ -4,5 +4,6 @@ public enum Action {
 	MOVE,
 	TURN,
 	ATTACK,
-	TALK
+	TALK,
+	NONE
 }

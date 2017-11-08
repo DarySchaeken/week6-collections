@@ -35,7 +35,7 @@ public class CardTest {
 	@Test
 	public void dealingCardReducesDeckSize() {
 		Deck deck = new Deck();
-		Card c = deck.dealCard();
+		deck.dealCard();
 		assertEquals(FULL_DECK_SIZE - 1, deck.getDeckSize());
 	}
 	
