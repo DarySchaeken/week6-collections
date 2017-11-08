@@ -6,6 +6,6 @@ public class PrioBot extends Robot {
 	}
 	
 	public void addCommand(Action action, String value, int priority){
-		super.addCommand(action, value, priority);
+		getCommands().add(new Command(action, value, priority));
 	}
 }

@@ -37,18 +37,22 @@ public class Robot {
 		commands.add(new Command(action, value));
 	}
 
-	public void addCommand(Action action, String value, int priority) {
+	/*public void addCommand(Action action, String value, int priority) {
 		if (!this.getClass().getSimpleName().equals("PrioBot")) {
 			System.out.println("Only PrioBots are able to use priority!");
 		} else {
 			commands.add(new Command(action, value, priority));
 		}
-	}
+	}*/
 
 	public void runCommands() {
 		while (commands.size() != 0) {
 			this.execute();
 		}
+	}
+
+	public Vector<Command> getCommands() {
+		return commands;
 	}
 
 	class Command {

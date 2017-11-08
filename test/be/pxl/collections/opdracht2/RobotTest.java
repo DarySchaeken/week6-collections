@@ -13,7 +13,7 @@ public class RobotTest {
 		robot = new Robot("TestBot 3000");
 		
 		robot.addCommand(Action.ATTACK, "KICK");
-		robot.addCommand(Action.ATTACK, "This shouldn't exist", 15);
+		//robot.addCommand(Action.ATTACK, "This shouldn't exist");
 		robot.addCommand(Action.TALK, "This is the second command.");
 	}
 	
